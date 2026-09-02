@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"timerp1\startup_stm32f103xb.o"
+"timerp1\main.o"
+"timerp1\stm32f1xx_it.o"
+"timerp1\stm32f1xx_hal_msp.o"
+"timerp1\stm32f1xx_hal_gpio_ex.o"
+"timerp1\stm32f1xx_hal_tim.o"
+"timerp1\stm32f1xx_hal_tim_ex.o"
+"timerp1\stm32f1xx_hal.o"
+"timerp1\stm32f1xx_hal_rcc.o"
+"timerp1\stm32f1xx_hal_rcc_ex.o"
+"timerp1\stm32f1xx_hal_gpio.o"
+"timerp1\stm32f1xx_hal_dma.o"
+"timerp1\stm32f1xx_hal_cortex.o"
+"timerp1\stm32f1xx_hal_pwr.o"
+"timerp1\stm32f1xx_hal_flash.o"
+"timerp1\stm32f1xx_hal_flash_ex.o"
+"timerp1\stm32f1xx_hal_exti.o"
+"timerp1\system_stm32f1xx.o"
+--strict --scatter "TIMERP1\TIMERP1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TIMERP1.map" -o TIMERP1\TIMERP1.axf

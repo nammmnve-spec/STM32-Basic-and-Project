@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"gy87test1\startup_stm32f103xb.o"
+"gy87test1\main.o"
+"gy87test1\stm32f1xx_it.o"
+"gy87test1\stm32f1xx_hal_msp.o"
+"gy87test1\app_angle.o"
+"gy87test1\app_math.o"
+"gy87test1\gy_87.o"
+"gy87test1\mpu6050.o"
+"gy87test1\stm32f1xx_hal_gpio_ex.o"
+"gy87test1\stm32f1xx_hal_i2c.o"
+"gy87test1\stm32f1xx_hal.o"
+"gy87test1\stm32f1xx_hal_rcc.o"
+"gy87test1\stm32f1xx_hal_rcc_ex.o"
+"gy87test1\stm32f1xx_hal_gpio.o"
+"gy87test1\stm32f1xx_hal_dma.o"
+"gy87test1\stm32f1xx_hal_cortex.o"
+"gy87test1\stm32f1xx_hal_pwr.o"
+"gy87test1\stm32f1xx_hal_flash.o"
+"gy87test1\stm32f1xx_hal_flash_ex.o"
+"gy87test1\stm32f1xx_hal_exti.o"
+"gy87test1\system_stm32f1xx.o"
+--strict --scatter "gy87test1\gy87test1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "gy87test1.map" -o gy87test1\gy87test1.axf

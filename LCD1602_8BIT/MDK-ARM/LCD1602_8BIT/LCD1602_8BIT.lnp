@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"lcd1602_8bit\startup_stm32f103xb.o"
+"lcd1602_8bit\main.o"
+"lcd1602_8bit\stm32f1xx_it.o"
+"lcd1602_8bit\stm32f1xx_hal_msp.o"
+"lcd1602_8bit\stm32f1xx_hal_gpio_ex.o"
+"lcd1602_8bit\stm32f1xx_hal.o"
+"lcd1602_8bit\stm32f1xx_hal_rcc.o"
+"lcd1602_8bit\stm32f1xx_hal_rcc_ex.o"
+"lcd1602_8bit\stm32f1xx_hal_gpio.o"
+"lcd1602_8bit\stm32f1xx_hal_dma.o"
+"lcd1602_8bit\stm32f1xx_hal_cortex.o"
+"lcd1602_8bit\stm32f1xx_hal_pwr.o"
+"lcd1602_8bit\stm32f1xx_hal_flash.o"
+"lcd1602_8bit\stm32f1xx_hal_flash_ex.o"
+"lcd1602_8bit\stm32f1xx_hal_exti.o"
+"lcd1602_8bit\system_stm32f1xx.o"
+--strict --scatter "LCD1602_8BIT\LCD1602_8BIT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LCD1602_8BIT.map" -o LCD1602_8BIT\LCD1602_8BIT.axf
