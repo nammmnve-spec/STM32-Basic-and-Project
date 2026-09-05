@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"uart1\startup_stm32f103xb.o"
+"uart1\main.o"
+"uart1\stm32f1xx_it.o"
+"uart1\stm32f1xx_hal_msp.o"
+"uart1\stm32f1xx_hal_gpio_ex.o"
+"uart1\stm32f1xx_hal_uart.o"
+"uart1\stm32f1xx_hal.o"
+"uart1\stm32f1xx_hal_rcc.o"
+"uart1\stm32f1xx_hal_rcc_ex.o"
+"uart1\stm32f1xx_hal_gpio.o"
+"uart1\stm32f1xx_hal_dma.o"
+"uart1\stm32f1xx_hal_cortex.o"
+"uart1\stm32f1xx_hal_pwr.o"
+"uart1\stm32f1xx_hal_flash.o"
+"uart1\stm32f1xx_hal_flash_ex.o"
+"uart1\stm32f1xx_hal_exti.o"
+"uart1\system_stm32f1xx.o"
+--strict --scatter "UART1\UART1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "UART1.map" -o UART1\UART1.axf
