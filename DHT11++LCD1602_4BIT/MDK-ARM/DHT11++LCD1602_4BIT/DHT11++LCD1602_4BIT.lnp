@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"dht11++lcd1602_4bit\startup_stm32f103xb.o"
+"dht11++lcd1602_4bit\i2c_lcd.o"
+"dht11++lcd1602_4bit\main.o"
+"dht11++lcd1602_4bit\stm32f1xx_it.o"
+"dht11++lcd1602_4bit\stm32f1xx_hal_msp.o"
+"dht11++lcd1602_4bit\stm32f1xx_hal_gpio_ex.o"
+"dht11++lcd1602_4bit\stm32f1xx_hal_adc.o"
+"dht11++lcd1602_4bit\stm32f1xx_hal_adc_ex.o"
+"dht11++lcd1602_4bit\stm32f1xx_hal.o"
+"dht11++lcd1602_4bit\stm32f1xx_hal_rcc.o"
+"dht11++lcd1602_4bit\stm32f1xx_hal_rcc_ex.o"
+"dht11++lcd1602_4bit\stm32f1xx_hal_gpio.o"
+"dht11++lcd1602_4bit\stm32f1xx_hal_dma.o"
+"dht11++lcd1602_4bit\stm32f1xx_hal_cortex.o"
+"dht11++lcd1602_4bit\stm32f1xx_hal_pwr.o"
+"dht11++lcd1602_4bit\stm32f1xx_hal_flash.o"
+"dht11++lcd1602_4bit\stm32f1xx_hal_flash_ex.o"
+"dht11++lcd1602_4bit\stm32f1xx_hal_exti.o"
+"dht11++lcd1602_4bit\stm32f1xx_hal_i2c.o"
+"dht11++lcd1602_4bit\stm32f1xx_hal_tim.o"
+"dht11++lcd1602_4bit\stm32f1xx_hal_tim_ex.o"
+"dht11++lcd1602_4bit\system_stm32f1xx.o"
+--strict --scatter "DHT11++LCD1602_4BIT\DHT11++LCD1602_4BIT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DHT11++LCD1602_4BIT.map" -o DHT11++LCD1602_4BIT\DHT11++LCD1602_4BIT.axf
